@@ -45,15 +45,9 @@ const outHoverContentPorto = el => {
 
 const nav = () => {
     const navMenu = document.querySelector(".nav-menu");
-    const navLi = document.querySelectorAll(".nav-menu li");
     const navTitle = document.querySelector("nav .title");
     
     navMenu.classList.toggle("active");
-    navLi.forEach(e => {
-        e.classList.toggle("active");
-    });
     navTitle.classList.toggle("active");
     
-    // hamburgerSpan.classList.toggle("inactive");
-    // navMenuImg.classList.toggle("active");
 }
