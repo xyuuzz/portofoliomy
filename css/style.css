@@ -67,6 +67,7 @@ nav .title h1{
 
 nav .title {
     padding: 15px 30px;
+    width: max-content;
     margin: 15px 0;
     background-color: black;
     border-radius: 10px;
@@ -82,13 +83,14 @@ nav .title {
 .svg-title {
     width: 30px;
     position: absolute;
-    top: -10px;
-    left: 60px;
+    top: -15%;
+    left: 5%;
 }
 
 .svg-title:nth-child(2) {
-    top: 37px;
-    left: 205px;
+    top: 50%;
+    /* left: 205px; */
+    left: 13.5%;
     transform: rotate(180deg);
 }
 
