@@ -1,6 +1,5 @@
 @media (max-width: 575.98px) {
     body {
-        /* overflow: none; */
         overflow-x: hidden;
     }
     
@@ -9,10 +8,11 @@
     }
     
     nav {
-        width: 100 vw;
+        width: 100%;
         bottom: -100;
         padding-bottom: 10px;
         box-shadow: 0 2px 5px 5px rgba(0, 0, 0, .4);
+        overflow: hidden;
     }
     
     nav .container {
@@ -24,27 +24,30 @@
         right: 0;
     }
     
+    /* ketika nav tidak aktif maka posisinya ada di atas sehingga tidak terlihat */
     nav .title, .nav-menu {
         transform: translate(0, -250%);
         position: absolute;
         transition: 1s;
     }
     
+    /* ketika nav aktif maka turunkan */
     .nav-menu.active, nav .title.active {
         transform: translate(0, 0);
         position: relative;
     }
     
     .nav-menu {
-        display: inline-block;
+        /* display: inline-block; */
+        /* margin: auto; */
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding-bottom: 30px;
         background-color: white;
     }
-    
-    /* .nav-menu li {
-        transition: all 1s;
-    } */
     
     .nav-menu li:nth-child(1) {
         margin-top: 40px;
@@ -55,9 +58,11 @@
         border-radius: 10px;
         /* width: max-content;
         height: max-content; */
+        width: 82%;
         line-height: 50px;
         margin: 0 30px;
         margin-top: 20px;
+        margin-right: 5%;
     }
     
     nav .title {
@@ -84,6 +89,7 @@
         margin-left: 20px;
         margin-top: 20px;
         cursor: pointer;
+        z-index: 9999;
     }
     
     .hamburger span.inactive {
@@ -104,12 +110,21 @@
         font-size: 30px;
     }
     
+    .ombak-horizontal {
+        width: 100%;
+        overflow-y: hidden;
+    }
+    
     .profile {
         display: inline-block;
         position: relative;
         width: 100%;
         margin: 0 auto;
         margin-top: -40px;
+    }
+    
+    .teks-hover-skill {
+        top: 56%;
     }
     
     .baris1 {

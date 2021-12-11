@@ -50,6 +50,7 @@ nav .container {
     align-items: center;
     column-gap: 20px;
     margin-right: -320px;
+    background-color: white;
 }
 
 .nav-menu li {
@@ -141,14 +142,15 @@ nav .title {
 }
 
 .teks-hover-skill {
-    position: absolute;
     font-size: 23px;
     font-weight: bold;
+    color: white;
+    
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
     top: 68%;
     left: 50%;
-    color: white;
-    transform: translate(-50%, -50%);
-    text-align: center;
 }
 
 .foto-profile img {
@@ -238,7 +240,6 @@ nav .title {
 .ombak-vertikal {
     position: absolute;
     right: 0;
-    overflow-y: hidden;
 }
 
 .about-me .title h1, .portofolio .title h1, .contact-me .title h1  {
